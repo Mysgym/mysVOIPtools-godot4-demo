@@ -1,0 +1,13 @@
+[submodule "Godot-opus"]
+	path = Godot-opus
+	url = https://github.com/Mysgym/Godot-opus
+[submodule "godot-cpp"]
+	path = godot-cpp
+	url = https://github.com/godotengine/godot-cpp
+	branch = 4.2
+[submodule "Godot-rnnoise"]
+	path = Godot-rnnoise
+	url = https://github.com/Mysgym/Godot-rnnoise
+[submodule "Godot-audio-resampler"]
+	path = Godot-audio-resampler
+	url = https://github.com/Mysgym/Godot-audio-resampler

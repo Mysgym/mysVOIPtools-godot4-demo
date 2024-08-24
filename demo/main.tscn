@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2l43208auw51"]
+
+[ext_resource type="Script" path="res://Input.gd" id="1_ec41y"]
+[ext_resource type="Script" path="res://Output.gd" id="1_ygibw"]
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_2uan2"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_4f6n8"]
+
+[node name="Main" type="Node"]
+
+[node name="Output" type="Node" parent="."]
+script = ExtResource("1_ygibw")
+
+[node name="Output" type="AudioStreamPlayer" parent="Output"]
+stream = SubResource("AudioStreamGenerator_2uan2")
+autoplay = true
+
+[node name="Input" type="Node" parent="."]
+script = ExtResource("1_ec41y")
+
+[node name="MicInput" type="AudioStreamPlayer" parent="Input"]
+stream = SubResource("AudioStreamMicrophone_4f6n8")
+autoplay = true
+bus = &"MicIn"
+
+[connection signal="sendPacket" from="Input" to="Output" method="_on_input_send_packet"]
