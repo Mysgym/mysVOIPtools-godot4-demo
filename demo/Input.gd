@@ -5,7 +5,7 @@ signal sendPacket
 
 # --- Create objects
 @onready var denoiser := AudioDenoiser.new()
-@onready var resampler := Resampler.new()
+@onready var resampler := AudioResampler.new()
 @onready var encoder := GdOpusEncoder.new()
 
 #size to input in the resampler to get a correctly size packet for opus (and denoiser, if default configuration)

@@ -1,7 +1,7 @@
 extends Node
 
 # --- Create objects
-@onready var resampler = Resampler.new()
+@onready var resampler = AudioResampler.new()
 @onready var decoder = GdOpusDecoder.new()
 
 # --- Initialize resampler
