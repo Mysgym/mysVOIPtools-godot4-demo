@@ -31,6 +31,10 @@
 
   5- Optional : Copy the extensions to your own project by copying the contents of the demo/addons folder to your own.
 
+  
+  Although these extensions have only been tested on linux, they should work on windows and macos provided the opus/speex/rnnoise libraries and minor adjustments to the SConstruct files.
+  Windows and macOS support is currently a work in progress, I encourage anyone attempting to compile for those OS to report any encountered issue and create pull requests for functional builds.
+  
 ## Usage
 
   Detailed usage of each extension is provided in the associated repos README.
